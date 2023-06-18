@@ -1,0 +1,52 @@
+body{
+    height:800px;
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.box{
+    width: 600px;
+    height: 50%;
+    padding: 10px;
+    padding-top: 20px;
+}
+.top{
+    position: relative;
+    height: 70%;
+    background: #FDD11E;
+    
+}
+
+.top::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    right: 50%;
+    left: 50%;
+    transform:translate(-50%, 0%) rotate(180deg) ;
+    border: solid 65px transparent;
+    border-bottom-color: #FDD11E;
+}
+.text{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.emoji {
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+
+.bottom{
+    background: #FF555A;
+    height: 30%;
+}
